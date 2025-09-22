@@ -4,6 +4,10 @@ import TextInput from './components/TextInput';
 import Button from './components/Button';
 
 const Login = () => {
+  const onSignIn = () => {
+    console.log('Button di klik');
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome</Text>
@@ -13,7 +17,7 @@ const Login = () => {
         label="Password"
         secureTextEntry={true}
       />
-      <Button label="Sign In" />
+      <Button label="Sign In" onPress={onSignIn} />
       <Button label="Create New Account" color="#797171" colorText="#ffffff" />
       <Button label="Sign in Google" color="#b70e0eff" colorText="#ffffff" />
       <Button label="Sign in Facebook" color="#0479eeff" colorText="#ffffff" />
